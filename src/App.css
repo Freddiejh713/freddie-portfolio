@@ -462,7 +462,7 @@ body {
 /* VIEW PROJECT LINK */
 
 .view-project {
-  font-size: 8px;
+  font-size: 13px;
   letter-spacing: 0.12em;
 
   color: var(--cream);
