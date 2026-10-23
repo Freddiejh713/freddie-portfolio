@@ -41,7 +41,7 @@ body {
 
   width: 100%;
   height: 21vh;
-  min-height: 165px;
+  min-height: 130px;
 
   background:#ffffff;
 
@@ -56,13 +56,13 @@ body {
 .logo {
   position: absolute;
 
-  left: 22px;
-  bottom: 15px;
+  left: 16px;
+  bottom: 10px;
 
   margin: 0;
 
   font-family: var(--heading-font);
-  font-size: clamp(80px, 7vw, 105px);
+  font-size: clamp(40px, 3.5vw, 53px); 
   font-weight: 200;
 
   line-height: 1;
@@ -79,26 +79,29 @@ body {
 .nav {
   position: absolute;
 
-  top: 50px;      /* moves it DOWN */
-  right: 60px;    /* moves it LEFT */
+  top: 25px;      /* moves it DOWN */
+  right: 35px;    /* moves it LEFT */
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
-  gap: 25px;
+  
 }
+
+
 
 .nav a {
   font-family: var(--nav-font);
 
-  font-size: 30px;
+  font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.1em;
 
   text-decoration: none;
   color: #000000;
 }
+
 
 .nav a:visited {
   color: #000000;
@@ -222,51 +225,56 @@ body {
   width: 100%;
   height: 100%;
   min-height: 0;
-  padding: 50px 60px;
+  padding: 30px 40px;
 }
+
+
 
 .about-label {
   position: absolute;
 
-  top: 45px;
-  left: 50px;
+  top: 25px;
+  left: 28px;
 
   margin: 0;
 
   font-family: var(--nav-font);
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.12em;
 
   color: var(--cream);
 }
 
+
+
 .about-heading {
   position: absolute;
-  top: 180px;
+  top: 12%;
   left: 60%;
 
   margin: 0;
 
   font-family: var(--heading-font);
-  font-size: clamp(60px, 5vw, 80px);
+  font-size: clamp(30px, 2.5vw, 40px);
   font-weight: 500;
   line-height: 1;
 
   color: var(--cream);
 }
 
+
 .about-photo {
   position: absolute;
 
   left: 8%;
   top: 15%;
-
-  
-
-
+  width: 28%;
   overflow: hidden;
 }
+
+
+
 
 .about-photo img {
   width: 100%;
@@ -283,58 +291,66 @@ body {
   top: 25%;
   left: 45%;
 
-  width: min(1600px, 48vw);
+  width: min(48vw);
 
   font-family: var(--nav-font);
-  font-size: 27px;
+  font-size: 13.5px;
   font-weight: 500;
 
-  line-height: 1.6;
+  line-height: 1.5;
 
   color: var(--cream);
 }
 
+
 .about-copy p {
-  margin: 0 0 24px;
+  margin: 0 0 18px;
 }
 
-
-
-/* WORK */
+/* =========================
+   WORK
+========================= */
 
 .work {
   position: relative;
   width: 100%;
 }
 
+
+/* WORK LABEL */
+
 .work-label {
   position: absolute;
 
-  top: 45px;
-  left: 50px;
+  top: 22.5px;
+  left: 25px;
 
   margin: 0;
 
   font-family: var(--nav-font);
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.12em;
 
   color: var(--cream);
 }
 
+
 .work-title p {
   margin: 0;
 
   font-family: var(--nav-font);
-  font-size: 12px;
+  font-size: 6px;
   letter-spacing: 0.12em;
 }
+
+
+/* SELECTED WORK */
 
 .selected-work {
   position: absolute;
 
-  top: 110px;
+  top: 55px;
   left: 50%;
 
   transform: translateX(-50%);
@@ -342,7 +358,7 @@ body {
   margin: 0;
 
   font-family: var(--heading-font);
-  font-size: clamp(55px, 6vw, 85px);
+  font-size: clamp(30px, 2.5vw, 40px);
   font-weight: 500;
   line-height: 1;
 
@@ -351,16 +367,22 @@ body {
   z-index: 2;
 }
 
-/* PROJECTS */
+
+/* =========================
+   PROJECTS
+========================= */
 
 .projects {
   display: flex;
   flex-direction: column;
 
-  gap: 120px;
+  gap: 60px;
 }
 
+
 .project-screen {
+  position: relative;
+
   width: 100%;
   min-height: 100vh;
 
@@ -369,81 +391,98 @@ body {
 
   align-items: start;
 
-  padding: 360px 4% 60px;
-
+  padding: 180px 4% 30px;
 }
+
+
+/* PROJECT TEXT */
 
 .project-text {
   width: 100%;
   height: 100%;
-  max-width: 1400px;
+
+
+  /* 1400px at 50% */
+  max-width: 700px;
 
   justify-self: center;
 
   font-family: var(--nav-font);
 }
 
+
+/* PROJECT NUMBER */
+
 .project-number {
-  margin: 0 0 40px;
-
-  
-  font-size: 12px;
-  letter-spacing: 0.1em;
-
   position: absolute;
 
-  position: absolute;
+  top: 150px;
+  left: 25px;
 
-  top: 300px;
-  left: 50px;
+  margin: 0;
 
- 
   font-family: var(--nav-font);
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 400;
   letter-spacing: 0.12em;
 
   color: var(--cream);
 }
 
+
+/* PROJECT TITLE */
+
 .project-text h3 {
-  margin: 0 0 70px;
+  margin: 0 0 35px;
 
   font-family: var(--heading-font);
-  font-size: 55px;
+
+  
+  font-size: 35px;
+
   font-weight: 500;
 
   color: var(--cream);
 }
 
 
-.project-description {
-  margin: 0 0 50px;
+/* PROJECT DESCRIPTION */
 
-  font-size: 36px;
-  line-height: 2;
+.project-description {
+  margin: 30 0 30px;
+
+  /* 20px media value at 50% */
+  font-size: 18px;
+  line-height: 1.7;
 
   color: var(--cream);
 }
 
+
+/* VIEW PROJECT LINK */
+
 .view-project {
-  font-size: 11px;
+  font-size: 5.5px;
   letter-spacing: 0.12em;
 
   color: var(--cream);
   text-decoration: none;
 
   border-bottom: 1px solid var(--cream);
-  padding-bottom: 4px;
+  padding-bottom: 2px;
 }
 
+
+/* PROJECT COVER */
 
 .project-cover {
   display: block;
 
   width: 100%;
   height: 100%;
-  max-width: 1500px;
+
+  /* 1500px at 50% */
+  max-width: 750px;
 
   justify-self: end;
 
@@ -452,63 +491,90 @@ body {
 
 .project-cover img {
   display: block;
+
   width: 100%;
   height: auto;
 }
 
 
-/*CV*/
+/* =========================
+   CV
+========================= */
 
 .cv {
   position: relative;
+
   min-height: 100vh;
-  padding: 50px 60px;
+
+  padding: 25px 30px;
 }
 
-.cv-section-label{
 
-    position: absolute;
-  
-    top: 45px;
-    left: 50px;
-  
-    margin: 0;
-  
-    font-family: var(--nav-font);
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 0.12em;
-  
-    color: var(--cream);
+/* CV LABEL */
+
+.cv-section-label {
+  position: absolute;
+
+  top: 22.5px;
+  left: 25px;
+
+  margin: 0;
+
+  font-family: var(--nav-font);
 
 
+  font-size: 12px;
+
+  font-weight: 400;
+  letter-spacing: 0.12em;
+
+  color: var(--cream);
 }
+
+
+/* CV CONTENT */
 
 .cv-content {
   width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+
+/* CV TITLE */
+
 .cv-content h2 {
-  margin: 0 0 50px;
+  margin: 0 0 25px;
 
   font-family: var(--heading-font);
-  font-size: 70px;
+
+  /* 55px media value at 50% */
+  font-size: 35px;
+
   font-weight: 500;
 
   color: var(--cream);
 }
 
+
+/* CV PREVIEW */
+
 .cv-preview {
   position: relative;
-  width: 1000px;
+
+  /* 1000px at 50% */
+  width: 500px;
+
   max-width: 75vw;
 
   display: block;
+
   overflow: hidden;
+
   background: white;
+
   cursor: pointer;
 }
 
@@ -520,6 +586,9 @@ body {
 
   transition: transform 0.4s ease;
 }
+
+
+/* CV HOVER OVERLAY */
 
 .cv-overlay {
   position: absolute;
@@ -538,7 +607,9 @@ body {
 
 .cv-overlay span {
   font-family: var(--nav-font);
-  font-size: 13px;
+
+  font-size: 6.5px;
+
   letter-spacing: 0.12em;
 
   color: #ffffff;
@@ -561,10 +632,17 @@ body {
   position: relative;
 
   width: 100%;
-  height: 20vh;
-  min-height: 300px;
 
-  padding: 50px 60px 45px;
+  /*
+    Keep viewport-relative height proportional.
+  */
+  height: 20vh;
+
+  /* 300px at 50% */
+  min-height: 150px;
+
+  /* 50px 60px 45px at 50% */
+  padding: 25px 30px 22.5px;
 
   color: var(--cream);
 }
@@ -578,7 +656,10 @@ body {
   text-align: center;
 
   font-family: var(--heading-font);
-  font-size: clamp(48px, 6vw, 70px);
+
+  /* Original 48px / 6vw / 70px at 50% */
+  font-size: clamp(24px, 3vw, 35px);
+
   font-weight: 300;
   line-height: 1;
 
@@ -591,23 +672,29 @@ body {
 .contact-links {
   position: absolute;
 
-  left: 200px;
-  right: 200px;
-  bottom: 80px;
+  /* 200px at 50% */
+  left: 100px;
+  right: 100px;
+
+  /* 80px at 50% */
+  bottom: 40px;
 
   display: grid;
+
   grid-template-columns: repeat(3, 1fr);
 
   align-items: center;
 }
 
 
-/* individual links */
+/* INDIVIDUAL LINKS */
 
 .contact-links a {
   font-family: var(--nav-font);
 
-  font-size: 28px;
+  /* 18px media value at 50% */
+  font-size: 16px;
+
   font-weight: 500;
   letter-spacing: 0.08em;
 
@@ -616,19 +703,22 @@ body {
 }
 
 
-/* left */
+/* LEFT */
+
 .contact-links a:nth-child(1) {
   text-align: left;
 }
 
 
-/* middle */
+/* MIDDLE */
+
 .contact-links a:nth-child(2) {
   text-align: center;
 }
 
 
-/* right */
+/* RIGHT */
+
 .contact-links a:nth-child(3) {
   text-align: right;
 }
@@ -640,49 +730,55 @@ body {
 
 /* =========================
    LIBRARY OF THINGS
-   ========================= */
+========================= */
 
-   .library-page {
-    width: 100%;
-    min-height: 100vh;
-  
-    background: #ffedcf;
-    color: #111111;
-  
-    font-family: var(--nav-font);
-  }
-  
-  
-  /* BACK */
-  
-  .library-back {
-    position: fixed;
-  
-    top: 30px;
-    left: 35px;
-  
-    z-index: 10;
-  
-    font-size: 25px;
-    letter-spacing: 0.1em;
-  
-    color: #111111;
-    text-decoration: none;
-  }
-  
-  /* TOP INTRO */
-/* TOP INTRO */
+.library-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #ffedcf;
+  color: #111111;
+
+  font-family: var(--nav-font);
+}
+
+
+/* =========================
+   BACK
+========================= */
+
+.library-back {
+  position: fixed;
+
+  top: 15px;
+  left: 17.5px;
+
+  z-index: 10;
+
+  font-size: 12.5px;
+  letter-spacing: 0.1em;
+
+  color: #111111;
+  text-decoration: none;
+}
+
+
+/* =========================
+   TOP INTRO
+========================= */
 
 .library-intro {
   width: 85%;
+
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 35px;
+
   display: grid;
   grid-template-columns: 30% 66%;
-  align-items: center;
-  
 
-  padding: 30px 0 70px;
+  align-items: center;
+
+  padding: 15px 0 35px;
 }
 
 
@@ -720,14 +816,10 @@ body {
 
   display: block;
 }
-  
-  /* PROJECT OVERVIEW */
-  
-  /* =========================
-   PROJECT OVERVIEW
-========================= */
+
+
 /* =========================
-   CASE STUDY TEXT SECTIONS
+   PROJECT OVERVIEW
 ========================= */
 
 .library-overview {
@@ -736,7 +828,7 @@ body {
   width: 100%;
   margin: 0 auto;
 
-  padding: 70px 0 110px;
+  padding: 35px 0 55px;
 }
 
 
@@ -745,7 +837,7 @@ body {
 .library-section-label {
   margin: 0;
 
-  font-size: 20px;
+  font-size: 10px;
   letter-spacing: 0.12em;
 }
 
@@ -753,11 +845,13 @@ body {
   position: absolute;
 
   left: 0;
-  top: 75px;
+  top: 37.5px;
 }
 
 
-/* MAIN CENTRE CONTENT */
+/* =========================
+   MAIN CENTRE CONTENT
+========================= */
 
 .overview-content {
   width: 85%;
@@ -770,10 +864,13 @@ body {
 /* SECTION HEADING */
 
 .overview-content h2 {
-  margin: 0 0 50px;
+  margin: 0 0 25px;
 
   font-family: var(--heading-font);
-  font-size: clamp(30px, 4vw, 50px);
+
+  /* was clamp(30px, 4vw, 50px) */
+  font-size: clamp(15px, 2vw, 25px);
+
   font-weight: 400;
   line-height: 0.9;
 
@@ -787,7 +884,9 @@ body {
   width: 100%;
   margin: 0;
 
-  font-size: 28px;
+  /* was 28px */
+  font-size: 14px;
+
   font-weight: 600;
   line-height: 2;
 
@@ -798,8 +897,9 @@ body {
 /* SPACE BETWEEN MULTIPLE PARAGRAPHS */
 
 .overview-content p + p {
-  margin-top: 38px;
+  margin-top: 19px;
 }
+
 
 /* =========================
    PROTOTYPE VIDEO
@@ -807,18 +907,23 @@ body {
 
 .library-prototype {
   width: 80%;
+
   margin: 0 auto;
-  padding: 100px 0 150px;
+
+  padding: 50px 0 75px;
 }
 
 
 /* LARGE TITLE */
 
 .prototype-title {
-  margin: 0 0 50px;
+  margin: 0 0 25px;
 
   font-family: var(--heading-font);
-  font-size: clamp(65px, 4vw, 85px);
+
+  /* was clamp(65px, 4vw, 85px) */
+  font-size: clamp(32.5px, 2vw, 42.5px);
+
   font-weight: 400;
   line-height: 0.9;
 
@@ -826,7 +931,9 @@ body {
 }
 
 
-/* VIDEO */
+/* =========================
+   VIDEO
+========================= */
 
 .library-video {
   display: block;
@@ -836,10 +943,6 @@ body {
 
   background: #000000;
 }
-
-
-
-
 
 /* =========================
    ARTEFACT QUEST
@@ -863,12 +966,12 @@ body {
 .artefact-back {
   position: fixed;
 
-  top: 30px;
-  left: 35px;
+  top: 15px;
+  left: 17.5px;
 
   z-index: 10;
 
-  font-size: 25px;
+  font-size: 12.5px;
   letter-spacing: 0.1em;
 
   color: #111111;
@@ -884,7 +987,7 @@ body {
   width: 70%;
   margin: 0 auto;
 
-  padding: 100px 0 20px;
+  padding: 50px 0 10px;
 }
 
 
@@ -904,12 +1007,12 @@ body {
   width: 100%;
   margin: 0 auto;
 
-  padding: 70px 0 110px;
+  padding: 30px 0 45px;
 }
 
 
 .artefact-content {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 
   text-align: center;
@@ -919,10 +1022,13 @@ body {
 /* HEADINGS */
 
 .artefact-content h2 {
-  margin: 0 0 50px;
+  margin: 0 0 25px;
 
   font-family: var(--heading-font);
-  font-size: clamp(30px, 4vw, 50px);
+
+  /* was clamp(30px, 4vw, 50px) */
+  font-size: clamp(15px, 2vw, 25px);
+
   font-weight: 400;
   line-height: 0.9;
 
@@ -936,7 +1042,9 @@ body {
   width: 100%;
   margin: 0;
 
-  font-size: 28px;
+  /* was 28px */
+  font-size: 14px;
+
   font-weight: 600;
   line-height: 2;
 
@@ -947,7 +1055,7 @@ body {
 /* SPACE BETWEEN PARAGRAPHS */
 
 .artefact-content p + p {
-  margin-top: 38px;
+  margin-top: 18px;
 }
 
 
@@ -959,15 +1067,18 @@ body {
   width: 80%;
   margin: 0 auto;
 
-  padding: 100px 0 150px;
+  padding: 50px 0 75px;
 }
 
 
 .artefact-prototype-title {
-  margin: 0 0 50px;
+  margin: 0 0 25px;
 
   font-family: var(--heading-font);
-  font-size: clamp(65px, 4vw, 85px);
+
+  /* was clamp(65px, 4vw, 85px) */
+  font-size: clamp(32.5px, 2vw, 42.5px);
+
   font-weight: 400;
   line-height: 0.9;
 
@@ -982,118 +1093,4 @@ body {
   height: auto;
 
   background: #000000;
-}
-
-
-
-
-/* =========================
-   LAPTOP RESPONSIVE
-========================= */
-
-@media (max-width: 1600px) {
-
-  /* HEADER */
-
-  .header {
-    min-height: 130px;
-  }
-
-  .logo {
-    left: 16px;
-    bottom: 10px;
-
-    font-size: clamp(50px, 5vw, 72px);
-  }
-
-  .nav {
-    top: 25px;
-    right: 35px;
-    gap: 10px;
-  }
-
-  .nav a {
-    font-size: 16px;
-  }
-
-
-  /* ABOUT */
-
-  .about-layout {
-    padding: 30px 40px;
-  }
-
-  .about-label {
-    top: 25px;
-    left: 28px;
-
-    font-size: 12px;
-  }
-
-  .about-photo {
-    left: 8%;
-    top: 15%;
-
-    width: 28%;
-  }
-
-  .about-heading {
-    top: 12%;
-    left: 60%;
-
-    font-size: clamp(34px, 3vw, 50px);
-  }
-
-  .about-copy {
-    top: 25%;
-    left: 45%;
-
-    width: 48vw;
-
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .about-copy p {
-    margin-bottom: 18px;
-  }
-
-
-  /* WORK */
-
-  .work-label {
-    font-size: 12px;
-  }
-
-  .selected-work {
-    font-size: clamp(45px, 5vw, 65px);
-  }
-
-  .project-text h3 {
-    font-size: 42px;
-  }
-
-  .project-description {
-    font-size: 20px;
-    line-height: 1.7;
-  }
-
-
-  /* CV */
-
-  .cv-section-label {
-    font-size: 12px;
-  }
-
-  .cv-content h2 {
-    font-size: 55px;
-  }
-
-
-  /* CONTACT */
-
-  .contact-links a {
-    font-size: 18px;
-  }
-
 }
